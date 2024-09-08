@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="">
+        <ul class="links-container">
+            <li class="link-item"><a href="/" class="link">home</a></li>
+            <li class="link-item"><a href="/editor" class="link">editor</a></li> 
+            <li class="link-item" id="btn_login"><a href="/login" class="link">login</a></li>   
+            <li class="link-item" id="btn_signup"><a href="/signup" class="link">signup</a></li>   
+            <li class="link-item" id="logout_btn">logout</li>   
+        </ul>
+    </nav>
+    <div class="banner"></div>
+    <div class="blog">
+        <h1 class="title"></h1>
+        <p class="published"><span>published at - </span></p>
+        <div class="article">
+            
+        </div>
+    </div>
+
+    <h1 class="sub-heading">Read more</h1>
+
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.1/firebase-app.js" ></script>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.1/firebase-firestore.js" ></script>
+
+    <!-- <script type="module" src="./js/firebase.js"></script> -->
+    <!-- <script type="module" src="./js/auth.js"></script> -->
+
+    <script type="module" src="js/blog.js"></script>
+    
+</body>
+</html>
